@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Domine&display=swap" rel="stylesheet">
+        <link rel="icon" href="pic5.jpg">
+    <title>Love Calculator</title>
+    <script>
+        function love()
+        {
+            var n=Math.random();
+            n=n*100+1;
+            var result=Math.floor(n);
+            var n1=document.getElementById("name1").value;
+            var n2=document.getElementById("name2").value;
+            document.getElementById('demo').innerHTML = " ❤️ LOVE ❤️ BETWEEN   " + n1 + " ❤️  " + n2 + " IS ❤️ " + 
+            "<h1 class=p1>" + result + "%" + "</h1>" ;
+
+        }
+    </script>
+</head>
+
+<style>
+    .p1{
+        color: red;
+        font-size: 50px;
+    }
+    img{
+        width: 100px;
+        height: 100px;
+        padding-left: 38%;
+        padding-right: 38%;
+    }
+    
+</style>
+<body style="background-color: #f19292;">
+    <h2 class="text-center">❤️     Love Calculator       ❤️</h2><br><br><br>
+    <br><br>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="1000">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="p1.jpg" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="pic1.jpg" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="pic2.jpg" alt="Third slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="pic3.jpg" alt="Third slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="pic4.jpg" alt="Third slide">
+          </div>
+        </div>
+      </div><br<br><br><br><br>
+    <h4 class="text-center text-danger" id="demo">❤️Enter the name of two persons to calculate <br>
+        the percentage of love between them❤️</h4><br><br><br>
+        <div class="ml-5 text-center" >
+        <input type="text" id="name1" name="name1" placeholder="name of first person" width="20%" height="10%"><br><br>
+        <input type="text" id="name2" name="name2" placeholder="name of second person"><br><br>
+        <button type="submit" class="btn btn-light" onclick="love()"> ❤️calculate ❤️</button><br><br><br>
+    </div>
+
+</body>
+</html>
